@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    
+    height: 2000px;
+}
+.nav-title {
+    position: fixed;
+    
+    width: 100%;
+    height: 55px;
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.title {
+    position: absolute;
+    text-decoration: none;
+    
+    top: 15px;
+    left: 5%;
+    
+    font-size: 20px;
+    
+    color: gray;
+}
+.title span {
+    color: black;
+}
+.titleBar {
+    position: absolute;
+    display: flex;
+    
+    top: 15px;
+    right: 5%;
+    
+}
+.titleBar a {
+    text-decoration: none;    
+}
+.titleBar a:hover {
+    color: blue;
+}
+.titleBar-box {
+    width: 85px;
+    
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+    padding-bottom: 17px;
+    
+    font-size: 18px;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    
+    color: gray;
+}
+.dropdown-content {
+    display: none;
+    
+    position: absolute;
+    min-width: 85px;
+    height: auto;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    
+    z-index: 1;
+}
+.titleBar-box:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content .content {
+    display: block;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    color: gray;
+    font-family: "Microsoft JhengHei";
+    font-size: 15px;
+    text-align: center;
+}
+.dropdown-content .content:hover {
+    background-color: whitesmoke;
+}
+@media screen and (min-width: 640px) {
+    .btn-640 {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .titleBar {
+        position: absolute;
+        display: none;
+        
+        height: auto;
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+        
+        top: 56px;
+        right: 0px;
+        
+        width: 150px;
+    }
+    .titleBar-toggle {
+        position: absolute;
+        display: block;
+        
+        height: auto;
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+        
+        top: 56px;
+        right: 0px;
+        
+        width: 150px;
+    }
+    .titleBar-box {
+        width: 150px;
+    }
+    .titleBar a {
+        display: block;
+        text-decoration: none;
+        
+        color: gray;        
+        font-family: "Microsoft JhengHei";
+        font-size: 20px;
+        text-align: left;
+        
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn-640 {
+        position: absolute;
+        display: block;
+        
+        top: 12px;
+        right: 3%;
+        
+        width: 35px;
+        height: 30px;
+        
+        border: 1px solid Gray;
+        border-radius: 5px;
+        
+        font-size: 20px;
+        text-align: center;
+    }
+    .dropdown {
+        padding: 0px;
+    }
+    .dropdown-content {
+        display: block;
+    }
+    .titleBar-box .dropdown-content {
+        display: none;
+        position: inherit;
+    }
+    .titleBar-box .dropdown-in {
+        display: block;
+        position: inherit;
+    }
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+}
